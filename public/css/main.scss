@@ -1,5 +1,56 @@
 @import "./reset.css";
+@import "./utility.scss";
+@import "./vars.scss";
+// general
+body,
+html {
+  background: $base-color;
+}
 
-h1{
-color: orange;
+.home {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  h1.name_plate {
+    font-size: $name_plate;
+    text-align: center;
+    color: $secondary-color;
+  }
+  p.subtitle {
+    color: $tertiary-color;
+    font-size: $role_plate;
+    text-align: center;
+  }
+  .social_icon_container {
+    i {
+      color: #e5e5e5;
+      font-size: 2rem;
+    }
+  }
+  p.email {
+    color: $secondary-color;
+  }
+}
+.about {
+  .section_title {
+    font-size: $section_title;
+    color: $tertiary-color;
+    text-align: center;
+  }
+}
+.work {
+  .section_title {
+    font-size: $section_title;
+    color: $tertiary-color;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body,
+  html {
+    background: lighten($base-color, 10%);
+  }
 }
