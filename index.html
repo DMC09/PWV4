@@ -37,21 +37,32 @@
       </section>
       <section class="work">
         <p class="section_title">My Projects</p>
-        <div class="project_container">
-          <!-- <div class="project_card">
-            <img src="" alt="">
-            <div class="overlay">
-      <div class="text">Hello World</div>
-    </div>
-          </div> -->
-          <div class="container">
-  <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/son-goku-ultra-instinct-alexia-chapuis.jpg" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">Hello World</div>
-    <button>github</button>
-  </div>
-</div>
+        <div class="container">
+          <img
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/son-goku-ultra-instinct-alexia-chapuis.jpg"
+            alt="Avatar"
+            class="image"
+          />
+          <div class="overlay">
+            <div class="test">
+              <button>Github</button>
+              <button>Live</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
+  <script>
+    const modalFunction = (e) => {
+      console.log(e.target);
+      overlay.classList.toggle('overlay-on');
+    };
+
+    const container = document.querySelector(".container");
+    const overlay = document.querySelector(".overlay");
+    container.addEventListener("click", modalFunction);
+
+    console.log(container);
+  </script>
 </html>
