@@ -53,18 +53,51 @@
           </div>
           <i id="infotag"class="fas fa-info-circle"></i>
         </div>
+        <div class="container">
+          <img
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/son-goku-ultra-instinct-alexia-chapuis.jpg"
+            alt="Avatar"
+            />
+          <div class="overlay">
+            <div class="overlay-content">
+              <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, non?</p>
+              <div class="button-container">
+                <button><a href="https://github.com">Github</a></button>
+                <button><a href="https://www.youtube.com">Live</a></button>
+              </div>
+            </div>
+          </div>
+          <i id="infotag"class="fas fa-info-circle"></i>
+        </div>
+        <div class="container">
+          <img
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/son-goku-ultra-instinct-alexia-chapuis.jpg"
+            alt="Avatar"
+            />
+          <div class="overlay">
+            <div class="overlay-content">
+              <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, non?</p>
+              <div class="button-container">
+                <button><a href="https://github.com">Github</a></button>
+                <button><a href="https://www.youtube.com">Live</a></button>
+              </div>
+            </div>
+          </div>
+          <i id="infotag"class="fas fa-info-circle"></i>
+        </div>
       </section>
     </main>
   </body>
   <script>
     const modalFunction = (e) => {
-      console.log(e.target);
-      overlay.classList.toggle("overlay-on");
+      console.log(e.target.previousElementSibling);
+      // console.log(e.target.parentElement); can get the conatiner So I can do this an the immediate sibling.
+      e.target.previousElementSibling.classList.toggle("overlay-on");
     };
 
-    const infoBtn = document.querySelector("#infotag");
+    const infoBtn = document.querySelectorAll("#infotag");
     const overlay = document.querySelector(".overlay");
-    infoBtn.addEventListener("click", modalFunction);
+    infoBtn.forEach(item=>item.addEventListener("click", modalFunction) )
 
     console.log(infoBtn);
   </script>
