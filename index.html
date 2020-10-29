@@ -15,18 +15,18 @@
   </head>
   <body>
     <main>
-      <section class="home">
-        <h1 class="name_plate">Dharmin Chauhan</h1>
+      <section class="hero">
+        <h1 class="fullname">Dharmin Chauhan</h1>
         <p class="subtitle">Web Developer</p>
-        <div class="social_icon_container">
+        <div class="link_container">
           <i class="fab fa-github-square"></i>
-          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-linkedin"></i>
         </div>
         <p class="email">Dharminlive1213@gmail.com</p>
       </section>
       <section class="about">
         <p class="section_title">About Me</p>
-        <p class="about_text">
+        <p class="bio">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam at
           delectus, nemo. Amet tempore atque, natus, maxime sint quidem pariatur
           repudiandae rerum optio suscipit libero quibusdam esse sit iure
@@ -35,20 +35,23 @@
           a nihil maiores excepturi debitis quisquam?
         </p>
       </section>
-      <section class="work">
+      <section class="project">
         <p class="section_title">My Projects</p>
         <div class="container">
           <img
             src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/son-goku-ultra-instinct-alexia-chapuis.jpg"
             alt="Avatar"
-            class="image"
-          />
+            />
           <div class="overlay">
-            <div class="test">
-              <button><a href="https://github.com">Github</a></button>
-              <button><a href="https://www.youtube.com">Live</a></button>
+            <div class="overlay-content">
+              <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, non?</p>
+              <div class="button-container">
+                <button><a href="https://github.com">Github</a></button>
+                <button><a href="https://www.youtube.com">Live</a></button>
+              </div>
             </div>
           </div>
+          <i id="infotag"class="fas fa-info-circle"></i>
         </div>
       </section>
     </main>
@@ -59,10 +62,10 @@
       overlay.classList.toggle("overlay-on");
     };
 
-    const container = document.querySelector(".container");
+    const infoBtn = document.querySelector("#infotag");
     const overlay = document.querySelector(".overlay");
-    container.addEventListener("click", modalFunction);
+    infoBtn.addEventListener("click", modalFunction);
 
-    console.log(container);
+    console.log(infoBtn);
   </script>
 </html>
