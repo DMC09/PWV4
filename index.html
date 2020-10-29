@@ -38,20 +38,22 @@
       <section class="project">
         <p class="section_title">My Projects</p>
         <div class="container">
-          <img
+        <img
             src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/son-goku-ultra-instinct-alexia-chapuis.jpg"
-            alt="Avatar"
-            />
-          <div class="overlay">
-            <div class="overlay-content">
-              <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, non?</p>
-              <div class="button-container">
-                <button><a href="https://github.com">Github</a></button>
-                <button><a href="https://www.youtube.com">Live</a></button>
-              </div>
+            alt="Avatar"/>
+
+        <div class="overlay">
+          <div class="overlay-content">
+            <p class="project_title">This is a project!</p>
+            <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, non?</p>
+            <div class="button-container">
+              <button><a href="https://github.com">Github</a></button>
+              <button><a href="https://www.youtube.com">Live</a></button>
             </div>
           </div>
-          <i id="infotag"class="fas fa-info-circle"></i>
+        </div>
+        <i id="infotag"class="fas fa-info-circle"></i>
+        <i id="closetag"class="fas fa-times"></i>
         </div>
         <div class="container">
           <img
@@ -89,16 +91,23 @@
     </main>
   </body>
   <script>
-    const modalFunction = (e) => {
-      console.log(e.target.previousElementSibling);
-      // console.log(e.target.parentElement); can get the conatiner So I can do this an the immediate sibling.
+  const infoBtn = document.querySelectorAll("#infotag");
+  const closeBtn = document.querySelectorAll("#closetag");
+  const overlay = document.querySelector(".overlay");
+  const openModal = (e) => {
       e.target.previousElementSibling.classList.toggle("overlay-on");
-    };
+      e.target.style.visibility = 'hidden';
+      e.target.nextElementSibling.style.visibility = 'visible';
+  };
+  const closeModal = (e) => {
+    console.log(e.target) // this is the close button;
+    console.log(e.target.previousElementSibling) // this is the info button;
+    console.log(e.target.previousElementSibling.previousElementSibling) // this is the overlay;
+  };
 
-    const infoBtn = document.querySelectorAll("#infotag");
-    const overlay = document.querySelector(".overlay");
-    infoBtn.forEach(item=>item.addEventListener("click", modalFunction) )
+    infoBtn.forEach(item=>item.addEventListener("click", openModal) )
+    closeBtn.forEach(item=>item.addEventListener("click", closeModal) )
 
-    console.log(infoBtn);
+    // console.log(infoBtn);
   </script>
 </html>

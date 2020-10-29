@@ -119,12 +119,27 @@ flex-flow: column;
 justify-content: center;
 height: 90%;
     }
-    .project_info{
+    .project_title{
       font-size: 2rem;
       color: $secondary-color;
     }
+    .project_info{
+      font-size: 1.25rem;
+      color: $secondary-color;
+    }
   }
-  i{
+
+  #infotag{
+    position: absolute;
+bottom: 0;
+left: 45%;
+padding: 1rem;
+font-size: 2.5rem;
+cursor: pointer;
+
+  }
+  #closetag{
+    visibility: hidden;
     position: absolute;
 bottom: 0;
 left: 45%;
