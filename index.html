@@ -44,18 +44,27 @@
         <p class="section_title">My Projects</p>
         <div class="card">
           <div class="project_bg">
-            <img src="assets/images/Screenshot_1 copy.png" alt="swag">
+            <img src="assets/images/covidTrackerSnap.png" alt="swag" />
           </div>
           <div class="backdrop">
             <div class="info">
               <i class="fa fa-info fa-1x block"></i>
               <i class="fas fa-times fa-2x block"></i>
               <div class="project_overlay">
-                <p class="project_title">Raval Card</p>
-                <p class="project_info">The Raval Card Landing page is single page tempalte for a Cred Card launch</p>
+                <p class="project_title">COVID-19 Tracker</p>
+                <p class="project_info">
+                  A web app used to retrieve COVID-19 information for the United
+                  States and each state
+                </p>
                 <div class="button_container">
-                  <button>Github</button>
-                  <button>Live</button>
+                  <button>
+                    <a href="https://github.com/DMC09/COVID19-US-Tracker"
+                      >Github</a
+                    >
+                  </button>
+                  <button>
+                    <a href="https://covid-19-us-tracker.netlify.app">Live</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -63,7 +72,7 @@
         </div>
         <div class="card">
           <div class="project_bg">
-            <img src="assets/images/Screenshot_1 copy.png" alt="swag">
+            <img src="./assets/images/ravaCardSnap.png" alt="swag" />
           </div>
           <div class="backdrop">
             <div class="info">
@@ -71,10 +80,17 @@
               <i class="fas fa-times fa-2x block"></i>
               <div class="project_overlay">
                 <p class="project_title">Raval Card</p>
-                <p class="project_info">The Raval Card Landing page is single page tempalte for a Cred Card launch</p>
+                <p class="project_info">
+                  A template landing page used to promote a new credit card
+                  launch
+                </p>
                 <div class="button_container">
-                  <button>Github</button>
-                  <button>Live</button>
+                  <button>
+                    <a href="https://github.com/DMC09/Raval-Landing">Github</a>
+                  </button>
+                  <button>
+                    <a href="https://dmc09.github.io/Raval-Landing/">Live</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -82,18 +98,71 @@
         </div>
         <div class="card">
           <div class="project_bg">
-            <img src="assets/images/Screenshot_1 copy.png" alt="swag">
+            <img src="./assets/images/redLeafBistroSnap.png" alt="swag" />
           </div>
           <div class="backdrop">
             <div class="info">
               <i class="fa fa-info fa-1x block"></i>
               <i class="fas fa-times fa-2x block"></i>
               <div class="project_overlay">
-                <p class="project_title">Raval Card</p>
-                <p class="project_info">The Raval Card Landing page is single page tempalte for a Cred Card launch</p>
+                <p class="project_title">Red Leaf Bistro</p>
+                <p class="project_info">
+                  A template full page app to promote a new fusion restaurant
+                </p>
                 <div class="button_container">
-                  <button>Github</button>
-                  <button>Live</button>
+                  <button>
+                    <a href="https://github.com/DMC09/RedLeafBistro">Github</a>
+                  </button>
+                  <button>
+                    <a href="https://redleafbistro.herokuapp.com/">Live</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project_bg">
+            <img src="./assets/images/sanaBetaSnap.png" alt="swag" />
+          </div>
+          <div class="backdrop">
+            <div class="info">
+              <i class="fa fa-info fa-1x block"></i>
+              <i class="fas fa-times fa-2x block"></i>
+              <div class="project_overlay">
+                <p class="project_title">Sana Beta</p>
+                <p class="project_info">
+                  A full-stack web app used to promote a new music streaming
+                  beta software
+                </p>
+                <div class="button_container">
+                  <button>
+                    <a href="https://github.com/DMC09/sana_Beta">Github</a>
+                  </button>
+                  <button>
+                    <a href="https://sana-beta.netlify.app/">Live</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project_bg">
+            <img src="./assets/images/weatherAppSnap.png" alt="swag" />
+          </div>
+          <div class="backdrop">
+            <div class="info">
+              <i class="fa fa-info fa-1x block"></i>
+              <i class="fas fa-times fa-2x block"></i>
+              <div class="project_overlay">
+                <p class="project_title">Weather App</p>
+                <p class="project_info">
+                A simple web app used to deliver basic weather information
+                </p>
+                <div class="button_container">
+                  <button><a href="https://github.com/DMC09/Weather-App">Github</a></button>
+                  <button><a href="https://weather-app-dmc.herokuapp.com">Live</a></button>
                 </div>
               </div>
             </div>
@@ -106,10 +175,11 @@
     const info_icon = document.querySelectorAll(".block");
     const overlay_Function = (e) => {
       console.log(e.target.parentElement);
-      e.target.parentElement.classList.toggle("active")
-    }
+      e.target.parentElement.classList.toggle("active");
+    };
     info_icon.forEach((icon) =>
-      icon.addEventListener("click", overlay_Function ));
+      icon.addEventListener("click", overlay_Function)
+    );
     console.log(info_icon);
   </script>
 </html>

@@ -95,7 +95,7 @@ html {
   margin: 0 auto;
   position: absolute;
   bottom: 0;
-  background: rgba(38, 50, 56, 1);
+  background: $tertiary-color;
   width: 32px;
   height: 32px;
   border-radius: 4px;
@@ -129,6 +129,7 @@ align-items: center;
       button {
         cursor: pointer;
         border: 0;
+
         padding: 0;
         margin: 0;
         border-radius: 5px;
@@ -137,6 +138,10 @@ align-items: center;
         height: 30px;
         font-size: 1.25rem;
         transition: all .3s ease-in-out;
+        a{
+text-decoration: none;
+color: black;
+        }
         &:hover{
 transform: scale(1.1);
 background: lighten(#e5e5e5,10%)
