@@ -53,7 +53,6 @@ html {
     text-align: justify;
     width: 75%;
     max-width: 400px;
-    border: 2px dashed teal;
     margin: 0 auto;
     }
 
@@ -66,7 +65,9 @@ html {
     text-align: center;
   }
 }
+.card_container{
 
+}
 .card {
   margin: 20px auto;
   border-radius: 8px;
@@ -106,7 +107,7 @@ html {
   margin: 0 auto;
   position: absolute;
   bottom: 0;
-  background: $tertiary-color;
+  background:#2a2a2a;
   width: 32px;
   height: 32px;
   border-radius: 4px;
@@ -272,5 +273,15 @@ transform: scale(1.1);
   body,
   html {
     background: lighten($base-color, 10%);
+  }
+
+  .card_container{
+display: flex;
+flex-wrap: wrap;
+
+  }
+  .card{
+    width: 400px;
+height: 300px;
   }
 }
