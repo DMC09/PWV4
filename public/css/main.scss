@@ -25,8 +25,14 @@ html {
   }
   .link_container {
     i {
-      color: #e5e5e5;
+      color: #A9A9A9;
       font-size: 2rem;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+        color: lighten(#A9A9A9,10%);
+      }
     }
   }
   p.email {
@@ -35,7 +41,7 @@ html {
   }
 }
 .about {
-  height: 100vh;
+  // height: 100vh;
   .section_title {
     font-size: $section_title;
     color: $tertiary-color;
@@ -44,8 +50,13 @@ html {
   .bio {
     color: $secondary-color;
     padding: 2rem 3rem;
-    text-align: center;
-  }
+    text-align: justify;
+    width: 75%;
+    max-width: 400px;
+    border: 2px dashed teal;
+    margin: 0 auto;
+    }
+
 }
 .project {
   height: 100vh;
