@@ -3,7 +3,7 @@
 //vars
 $base-color: #072e40;
 $secondary-color: #FFF7D6;
-$tertiary-color: #692F2E;
+$tertiary-color: #731E01;
 $fullname: 4rem;
 $role_plate: 2.5rem;
 $section_title: 1.75rem;
@@ -56,6 +56,7 @@ section{
     font-size: $section_title;
     color: $tertiary-color;
     text-align: center;
+    font-size: 2rem;
   }
   .bio {
     color: $secondary-color;
@@ -74,6 +75,7 @@ section{
     color: $tertiary-color;
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 2rem;
   }
 }
 .card_container {
@@ -137,7 +139,7 @@ section{
 
     .project_title {
       font-size: 2rem;
-      color: lighten($tertiary-color, 10%);
+      color: lighten($base-color, 15%);
     }
     .project_info {
       font-size: 1.1rem;
