@@ -1,11 +1,19 @@
 @import "./reset.css";
-@import "./utility.scss";
-@import "./vars.scss";
 
+//vars
+$base-color: #072e40;
+$secondary-color: #FFF7D6;
+$tertiary-color: #692F2E;
+$fullname: 4rem;
+$role_plate: 2.5rem;
+$section_title: 1.75rem;
 // general
 body,
 html {
   background: $base-color;
+}
+section{
+  margin-bottom: 5rem;
 }
 
 .hero {
