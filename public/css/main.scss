@@ -2,7 +2,7 @@
 
 //vars
 $base-color: #072e40;
-$secondary-color: #FFF7D6;
+$secondary-color: #fff7d6;
 $tertiary-color: #c84417;
 $fullname: 4rem;
 $role_plate: 2.5rem;
@@ -12,7 +12,7 @@ body,
 html {
   background: $base-color;
 }
-section{
+section {
   margin-bottom: 5rem;
 }
 
@@ -81,14 +81,17 @@ section{
 .card_container {
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 .card {
-  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   width: 75%;
-  height: 15rem;
+
+  height: 300px;
+margin-bottom: 1.5rem;
+
 }
 
 .project_bg {
@@ -282,14 +285,16 @@ section{
 @media only screen and (min-width: 768px) {
   body,
   html {
-
   }
 
   .card_container {
     flex-flow: wrap;
+    justify-content: space-evenly;
   }
   .card {
-    max-width: 400px;
+    width: 30%;
+    max-width: 500px;
     height: 350px;
+    margin-bottom: 1.5rem;
   }
 }
