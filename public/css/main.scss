@@ -11,7 +11,7 @@ $section_title: 1.75rem;
 body,
 html {
   background: $base-color;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 section {
   margin-bottom: 5rem;
@@ -48,7 +48,6 @@ section {
       }
     }
     margin-bottom: 2rem;
-
   }
   a.email {
     color: $secondary-color;
@@ -71,7 +70,7 @@ section {
     width: 75%;
     max-width: 500px;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .project {
@@ -83,18 +82,48 @@ section {
     margin-bottom: 2rem;
     font-size: 2rem;
   }
+  .card_container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    border: 2px solid red;
+
+    .card {
+      border: 2px dashed white;
+      text-align: center;
+      img{
+        width: 75%;
+        max-width: 300px;
+        height: 250px;
+      }
+      .project_info{
+        border: 2px solid orange;
+        width: 75%;
+        max-width: 300px;
+        margin: 0 auto;
+        .project_title{
+          color: $secondary-color;
+          font-size: 1.25rem;
+        }
+        .project_desc{
+          color: $secondary-color;
+          font-size: 1rem;
+        }
+
+      }
+  }
 }
-.card_container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+
+
 }
 
 @media only screen and (min-width: 768px) {
   body,
   html {
+    background: red;
   }
-  .about .bio{
+  .about .bio {
     text-align: justify;
   }
 
@@ -103,9 +132,8 @@ section {
     justify-content: space-evenly;
   }
   .card {
-    width: 30%;
-    max-width: 500px;
-    height: 350px;
-    margin-bottom: 1.5rem;
+
+
+
   }
 }
