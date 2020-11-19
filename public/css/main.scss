@@ -4,7 +4,7 @@
 $base-color: #072e40;
 $secondary-color: #fff7d6;
 $tertiary-color: #c84417;
-$fullname: 4rem;
+$fullname: 8rem;
 $role_plate: 2.5rem;
 $section_title: 1.75rem;
 // general
@@ -92,22 +92,24 @@ height: 100vh;
     flex-flow: column;
     align-items: center;
 
+width: 100%;
     border: 2px solid red;
 
     .card {
       border: 2px dashed white;
       text-align: center;
+      margin-bottom: 2rem;
+
+      max-width: 600px;
       img{
-        width: 75%;
-        max-width: 300px;
+width: 300px;
         height: 250px;
         margin-bottom: 2rem;
         border-radius: 10px;
       }
       .project_info{
         border: 2px solid orange;
-        width: 75%;
-        max-width: 300px;
+
         margin: 0 auto;
         .project_title{
           color: $secondary-color;
@@ -119,14 +121,16 @@ height: 100vh;
         }
 .projectBtn_container{
   border: 2px solid red;
+width: 75%;
   margin-top: 2rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 button{
   border-radius: 0;
-  height: 30px;
+  height: 50px;
   background: #e5e5e5;
-  width: 75px;
+  width: 100px;
   border-radius: 10px;
   border: none;
   a{
