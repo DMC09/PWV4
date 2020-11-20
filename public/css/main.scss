@@ -194,10 +194,16 @@ section {
     text-align: justify;
   }
 
-  .card_container {
+  .project .card_container {
     flex-flow: wrap;
     justify-content: space-evenly;
+    .card {
+      flex-basis: 33%;
+      img{
+        width: 400px;
+        height: 300px;
+      }
+    }
   }
-  .card {
-  }
+
 }
