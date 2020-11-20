@@ -4,9 +4,20 @@
 $base-color: #072e40;
 $secondary-color: #fff7d6;
 $tertiary-color: #c84417;
-$fullname: 8rem;
+$fullname: 4.5rem;
 $role_plate: 2.5rem;
-$section_title: 1.75rem;
+$email: 1.5rem;
+$section_title: 2rem;
+$bio: 1rem;
+$project_title:1.5rem;
+$project_desc:1rem;
+//mixins
+@mixin section_title {
+font-size: $section_title;
+  color: $tertiary-color;
+  text-align: center;
+  padding-top: 2rem;
+}
 // general
 body,
 html {
@@ -44,112 +55,140 @@ section {
       transition: all 0.3s ease-in-out;
       &:hover {
         transform: scale(1.1);
-        color: lighten(#a9a9a9, 10%);
+        color: lighten(#a9a9a9, 20%);
       }
     }
     margin-bottom: 2rem;
   }
   a.email {
     color: $secondary-color;
-    font-size: 1.5rem;
-    padding-bottom: 5rem;
+    font-size: $email;
+    padding-bottom: 3rem;
   }
-
-  button{
+  button {
+    box-shadow: -6px 8px 13px -5px #000;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 125px;
     height: 50px;
-    width: 200px;
+    border: 2px solid $secondary-color;
+    display: inline-block;
+    cursor: pointer;
+    color: $secondary-color;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    margin: 0rem 0.5rem;
+    font-size: 1.25rem;
+
+    &:hover {
+      background: $secondary-color;
+      transform: scale(1.05);
+      color: $base-color;
+    }
+    &:active {
+      position: relative;
+      top: 4px;
+    }
   }
 }
 .about {
   height: 100vh;
   .section_title {
-    font-size: $section_title;
-    color: $tertiary-color;
-    text-align: center;
-    font-size: 2rem;
+    @include section_title;
   }
   .bio {
     color: $secondary-color;
-    padding: 2rem 3rem;
-    text-align: center;
+
+    text-align: justify;
+    justify-content: center;
     width: 75%;
     max-width: 500px;
     margin: 0 auto;
-    font-size: 1rem;
+    margin-top: 3rem;
+    font-size: $bio;
   }
 }
 .project {
-height: 100vh;
+  height: 100vh;
   .section_title {
-    font-size: $section_title;
-    color: $tertiary-color;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    @include section_title;
   }
   .card_container {
     display: flex;
     flex-flow: column;
     align-items: center;
-
-width: 100%;
-    border: 2px solid red;
-
+    margin-top: 3rem;
+    width: 100%;
     .card {
-      border: 2px dashed white;
       text-align: center;
       margin-bottom: 2rem;
-
       max-width: 600px;
-      img{
-width: 300px;
+      img {
+        width: 300px;
         height: 250px;
         margin-bottom: 2rem;
         border-radius: 10px;
       }
-      .project_info{
-        border: 2px solid orange;
-
+      .project_info {
         margin: 0 auto;
-        .project_title{
+        .project_title {
           color: $secondary-color;
-          font-size: 1.25rem;
+          font-size: $project_title;
+          margin-bottom: 1rem;
         }
-        .project_desc{
+        .project_desc {
           color: $secondary-color;
-          font-size: 1rem;
+          font-size: $project_desc;
+          width: 80%;
+          margin: 0 auto;
         }
-.projectBtn_container{
-  border: 2px solid red;
-width: 75%;
-  margin-top: 2rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-button{
-  border-radius: 0;
-  height: 50px;
-  background: #e5e5e5;
-  width: 100px;
-  border-radius: 10px;
-  border: none;
-  a{
-    text-decoration: none;
-    color: black;
-  }
-}
-}
+        .projectBtn_container {
+          width: 75%;
+          margin: 0 auto;
+          margin-top: 2rem;
+          display: flex;
+          justify-content: space-around;
+          a {
+            display: block;
+            cursor: pointer;
+            button {
+              box-shadow: -6px 8px 13px -5px #000;
+              background: rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              width: 125px;
+              height: 50px;
+              border: 2px solid $secondary-color;
+              display: inline-block;
+              cursor: pointer;
+              color: $secondary-color;
+              text-decoration: none;
+              text-shadow: 0px 1px 0px #000;
+              transition: all 0.3s ease-in-out;
+              margin: 0rem 0.5rem;
+              font-size: 1.25rem;
+              &:hover {
+                background: $secondary-color;
+                transform: scale(1.05);
+                color: $base-color;
+              }
+              &:active {
+                position: relative;
+                top: 4px;
+              }
+            }
+          }
+        }
       }
+    }
   }
-}
-
-
 }
 
 @media only screen and (min-width: 768px) {
   body,
   html {
-    background: red;
+    background: lighten($base-color, 10%);
   }
   .about .bio {
     text-align: justify;
@@ -160,8 +199,5 @@ button{
     justify-content: space-evenly;
   }
   .card {
-
-
-
   }
 }
