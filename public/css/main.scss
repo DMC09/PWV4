@@ -70,7 +70,7 @@ section {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 125px;
-    height: 50px;
+    height: 40px;
     border: 2px solid $secondary-color;
     display: inline-block;
     cursor: pointer;
@@ -80,7 +80,7 @@ section {
     transition: all 0.3s ease-in-out;
     margin: 0 auto;
     margin: 0rem 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     &:hover {
       background: $secondary-color;
@@ -157,8 +157,8 @@ section {
               box-shadow: -6px 8px 13px -5px #000;
               background: rgba(0, 0, 0, 0.1);
               border-radius: 10px;
-              width: 125px;
-              height: 50px;
+              width: 100px;
+              height: 35px;
               border: 2px solid $secondary-color;
               display: inline-block;
               cursor: pointer;
@@ -167,7 +167,7 @@ section {
               text-shadow: 0px 1px 0px #000;
               transition: all 0.3s ease-in-out;
               margin: 0rem 0.5rem;
-              font-size: 1.25rem;
+              font-size: 1rem;
               &:hover {
                 background: $secondary-color;
                 transform: scale(1.05);
