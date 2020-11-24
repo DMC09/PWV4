@@ -127,6 +127,7 @@ section {
       max-width: 600px;
       img {
         width: 300px;
+        box-shadow: -6px 8px 13px -5px #000;
         height: 250px;
         margin-bottom: 2rem;
         border-radius: 10px;
@@ -137,6 +138,7 @@ section {
           color: $secondary-color;
           font-size: $project_title;
           margin-bottom: 1rem;
+          text-decoration: underline;
         }
         .project_desc {
           color: $secondary-color;
@@ -188,10 +190,21 @@ section {
 @media only screen and (min-width: 768px) {
   body,
   html {
-    background: lighten($base-color, 10%);
+
   }
+
+  .hero h1.fullname{
+    font-size: 6rem;
+  }
+  .hero p.subtitle{
+    font-size: 3rem;
+  }
+.about .section_title,.project .section_title{
+  font-size: 3rem;
+}
   .about .bio {
     text-align: justify;
+    font-size: 1.5rem;
   }
 
   .project .card_container {
