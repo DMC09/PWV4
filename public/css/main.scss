@@ -23,16 +23,15 @@ $project_desc: 1rem;
   font-size: 1.5rem;
 }
 
-.nav_text{
-opacity: 0;
-color: $secondary-color;
-transition: all .3s ease-in-out;
+.nav_text {
+  opacity: 0;
+  color: $secondary-color;
+  transition: all 0.3s ease-in-out;
 }
 
-.reveal-text{
-opacity: 1;
-color: $secondary-color;
-
+.reveal-text {
+  opacity: 1;
+  color: $secondary-color;
 }
 // general
 body,
@@ -46,25 +45,9 @@ html {
 section {
   margin-bottom: 5rem;
   position: relative;
+
 }
 
-.fa-chevron-up {
-@include nav-arrow;
-  position: absolute;
-  top: 47%;
-  margin-left: 1rem;
-}
-.fa-chevron-down {
-@include nav-arrow;
-  position: absolute;
-  bottom: 47%;
-  margin-left: 1rem;
-}
-
-.nav-box-up, .nav-box-down {
-  display: block;
-  cursor: pointer;
-}
 
 .hero {
   height: 100vh;
@@ -153,7 +136,7 @@ section {
   }
 }
 .project {
-  height: 100vh;
+  height: 90vh;
   .section_title {
     @include section_title;
   }

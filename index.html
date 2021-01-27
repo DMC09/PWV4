@@ -60,12 +60,6 @@
         </div>
       </section>
       <section id="about" class="about">
-        <div class="nav-box-up">
-        <a href="#main">
-          <i class="fas fa-chevron-up"></i>
-        </a>
-        <span class="nav_text">Main</span>
-        </div>
         <p class="section_title">About Me</p>
         <p class="bio">
           I am Front End Developer who loves making accessible and user friendly
@@ -78,18 +72,8 @@
           love how east it is to make dynamic Single Page Applications and that
           it can be used for other work like VR and mobile.
         </p>
-        <div class="nav-box-down">
-          <a href="#project"><i class="fas fa-chevron-down"></i></a>
-          <span class="nav_text">Projects</span>
-        </div>
       </section>
       <section id="project" class="project">
-        <div  class="nav-box-up">
-        <a href="#main">
-           <i class="fas fa-chevron-up"></i>
-        </a>
-        <span class="nav_text">Projects</span>
-        </div>
         <p class="section_title">My Projects</p>
         <div class="card_container">
           <div class="card">
@@ -280,17 +264,6 @@
       </section>
     </main>
     <script>
-      const upBox = document.querySelectorAll(".nav-box-up");
-      const downBox = document.querySelector(".nav-box-down");
-      console.log(downBox)
-
-      // Play with the mouse events to get desired outcome.
-    downBox.addEventListener('mouseenter', ()=> {
-      downBox.lastElementChild.classList.toggle('reveal-text')
-    })
-    downBox.addEventListener('mouseleave', ()=> {
-      downBox.lastElementChild.classList.toggle('reveal-text')
-    })
 
     </script>
   </body>
