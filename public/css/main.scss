@@ -26,12 +26,13 @@ $project_desc: 1rem;
 .nav_text{
 opacity: 0;
 color: $secondary-color;
-
 transition: all .3s ease-in-out;
 }
 
 .reveal-text{
 opacity: 1;
+color: $secondary-color;
+
 }
 // general
 body,
