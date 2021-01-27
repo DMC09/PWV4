@@ -9,14 +9,29 @@ $role_plate: 2.5rem;
 $email: 1.5rem;
 $section_title: 2rem;
 $bio: 1rem;
-$project_title:1.5rem;
-$project_desc:1rem;
+$project_title: 1.5rem;
+$project_desc: 1rem;
 //mixins
 @mixin section_title {
-font-size: $section_title;
+  font-size: $section_title;
   color: $tertiary-color;
   text-align: center;
   padding-top: 2rem;
+}
+@mixin nav-arrow {
+  color: $tertiary-color;
+  font-size: 1.5rem;
+}
+
+.nav_text{
+opacity: 0;
+color: $secondary-color;
+
+transition: all .3s ease-in-out;
+}
+
+.reveal-text{
+opacity: 1;
 }
 // general
 body,
@@ -24,13 +39,36 @@ html {
   background: $base-color;
   font-family: "Rajdhani", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 section {
   margin-bottom: 5rem;
+  position: relative;
+}
+
+.fa-chevron-up {
+@include nav-arrow;
+  position: absolute;
+  top: 47%;
+  margin-left: 1rem;
+}
+.fa-chevron-down {
+@include nav-arrow;
+  position: absolute;
+  bottom: 47%;
+  margin-left: 1rem;
+}
+
+.nav-box-up, .nav-box-down {
+  display: block;
+  cursor: pointer;
 }
 
 .hero {
   height: 100vh;
   display: flex;
+  position: relative;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -95,6 +133,9 @@ section {
 }
 .about {
   height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   .section_title {
     @include section_title;
   }
@@ -190,18 +231,18 @@ section {
 @media only screen and (min-width: 768px) {
   body,
   html {
-
   }
 
-  .hero h1.fullname{
+  .hero h1.fullname {
     font-size: 6rem;
   }
-  .hero p.subtitle{
+  .hero p.subtitle {
     font-size: 3rem;
   }
-.about .section_title,.project .section_title{
-  font-size: 3rem;
-}
+  .about .section_title,
+  .project .section_title {
+    font-size: 3rem;
+  }
   .about .bio {
     text-align: left;
     font-size: 1.5rem;
@@ -212,11 +253,10 @@ section {
     justify-content: space-evenly;
     .card {
       flex-basis: 33%;
-      img{
+      img {
         width: 400px;
         height: 300px;
       }
     }
   }
-
 }
