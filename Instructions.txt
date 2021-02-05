@@ -1,0 +1,6 @@
+Instructions on How to update this repo.
+
+
+1. Once changes are made in the terminal type " git add ." (if you want to commit every)
+2. Add a commit with message "git commit -m "Insert message" "
+3. Push to Github "git push origin main"
