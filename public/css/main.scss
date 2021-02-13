@@ -141,23 +141,41 @@ section {
     @include section_title;
   }
   .card_container {
-    display: flex;
-    flex-flow: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
     align-items: center;
+    border: 1px dashed blue;
     margin-top: 3rem;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
     .card {
       text-align: center;
+      border-radius: 10px;
+      border: 2px solid orange;
+      background: grey;
+      display: flex;
       margin-bottom: 2rem;
       max-width: 600px;
       img {
-        width: 300px;
+        width: 150px;
         box-shadow: -6px 8px 13px -5px #000;
-        height: 250px;
-        margin-bottom: 2rem;
+
+
         border-radius: 10px;
       }
       .project_info {
+
+        .icon_set{
+          border: 2px dotted purple;
+          & > *{
+            color:red;
+          }
+        }
+        border:2px solid red;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
         margin: 0 auto;
         .project_title {
           color: $secondary-color;
@@ -233,12 +251,13 @@ section {
   }
 
   .project .card_container {
-    flex-flow: wrap;
-    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+        justify-content: center;
     .card {
       flex-basis: 33%;
       img {
-        width: 400px;
+        width: 300px;
         height: 300px;
       }
     }
