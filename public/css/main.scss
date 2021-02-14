@@ -145,15 +145,16 @@ section {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
     align-items: center;
-    border: 1px dashed blue;
+
     margin-top: 3rem;
     width: 75%;
     margin: 0 auto;
     .card {
       text-align: center;
       border-radius: 10px;
-      border: 2px solid orange;
-      background: #333333;
+
+      background: #5b5b5b;
+      padding: 0.4rem;
       display: flex;
       margin-bottom: 2rem;
       max-width: 600px;
@@ -188,7 +189,7 @@ section {
             color:#61dafb;
           }
         }
-        border:2px solid red;
+
         display: flex;
         flex-flow: column;
         justify-content: space-around;
@@ -216,11 +217,12 @@ section {
             cursor: pointer;
             button {
               box-shadow: -6px 8px 13px -5px #000;
-              background: rgba(0, 0, 0, 0.1);
+              // background: rgba(0, 0, 0, 0.1);
+              background: $base-color;
               border-radius: 10px;
               width: 100px;
               height: 35px;
-              border: 2px solid $secondary-color;
+              border: 2px solid $base-color;
               display: inline-block;
               cursor: pointer;
               color: $secondary-color;
@@ -232,7 +234,7 @@ section {
               &:hover {
                 background: $secondary-color;
                 transform: scale(1.05);
-                color: $base-color;
+                color: $tertiary-color;
               }
               &:active {
                 position: relative;
@@ -270,6 +272,7 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3,1fr);
         justify-content: center;
+        margin-top: 5rem;
     .card {
       flex-basis: 33%;
       img {
