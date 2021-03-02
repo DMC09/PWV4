@@ -138,39 +138,50 @@ section {
     @include section_title;
   }
   .card_container {
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(6,1fr);
+place-items: center;
     .card {
       margin-bottom: 1.5rem;
       border: 1px solid red;
+      padding: 1rem 0.5rem;
+      background: #333;
+      border-radius: 10px;
       display: flex;
+      width: 90%;
 
       img {
         height: 150px;
         width: 150px;
+        border-radius: 10px;
+      }
+      .icon_set {
+        padding-top: 1rem;
+text-align: center;
+        & > * {
+          font-size: 1.5rem;
+          margin: 0 0.5rem;
+        }
+        .fa-js-square {
+          color: #f0db4f;
+        }
+        .fa-node-js {
+          color: #68a063;
+        }
+        .fa-css3-alt {
+          color: #2965f1;
+        }
+        .fa-html5 {
+          color: #f06529;
+        }
+        .fa-react {
+          color: #61dafb;
+        }
       }
       .project_info {
 
-        .icon_set {
 
-          & > * {
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-          }
-          .fa-js-square {
-            color: #f0db4f;
-          }
-          .fa-node-js {
-            color: #68a063;
-          }
-          .fa-css3-alt {
-            color: #2965f1;
-          }
-          .fa-html5 {
-            color: #f06529;
-          }
-          .fa-react {
-            color: #61dafb;
-          }
-        }
 
         display: flex;
         flex-flow: column;
@@ -181,22 +192,31 @@ section {
           font-size: $project_title;
           margin-bottom: 1rem;
           text-decoration: underline;
+          text-align: center;
         }
         .project_desc {
           color: $secondary-color;
           font-size: $project_desc;
+          text-align: center;
+          padding: 0rem 1rem;
         }
         .projectBtn_container {
+          display: flex;
+          justify-content: center;
+
           a {
             display: block;
             cursor: pointer;
+text-align: center;
             button {
               box-shadow: -6px 8px 13px -5px #000;
               // background: rgba(0, 0, 0, 0.1);
               background: $base-color;
               border-radius: 10px;
-
+              width: 70px;
+                           height: 35px;
               border: 2px solid $base-color;
+
               display: inline-block;
               cursor: pointer;
               color: $secondary-color;
