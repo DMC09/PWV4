@@ -144,7 +144,7 @@ grid-template-rows: repeat(6,1fr);
 place-items: center;
     .card {
       margin-bottom: 1.5rem;
-      border: 1px solid red;
+
       padding: 1rem 0.5rem;
       background: #333;
       border-radius: 10px;
@@ -160,8 +160,9 @@ place-items: center;
         padding-top: 1rem;
 text-align: center;
         & > * {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           margin: 0 0.5rem;
+
         }
         .fa-js-square {
           color: #f0db4f;
@@ -213,7 +214,7 @@ text-align: center;
               // background: rgba(0, 0, 0, 0.1);
               background: $base-color;
               border-radius: 10px;
-              width: 70px;
+              width: 80px;
                            height: 35px;
               border: 2px solid $base-color;
 
@@ -268,10 +269,14 @@ text-align: center;
     justify-content: center;
     margin-top: 5rem;
     .card {
-      flex-basis: 33%;
+width: 66%;
+max-width: 600px;
       img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
+
+        border-radius:  10px;
+        border: 3px solid grey;
       }
     }
   }
