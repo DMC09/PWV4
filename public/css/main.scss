@@ -39,6 +39,14 @@ html {
   background: $base-color;
   font-family: "Rajdhani", sans-serif;
 }
+body{
+}
+main{
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+
+}
 html {
   scroll-behavior: smooth;
 }
@@ -272,7 +280,7 @@ text-align: center;
     margin-top: 5rem;
     .card {
 width: 66%;
-max-width: 600px;
+max-width: 400px;
       img {
         width: 200px;
         height: 200px;
