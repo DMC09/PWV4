@@ -149,13 +149,6 @@ section {
       border-radius: 10px;
       display: flex;
       width: 90%;
-      .image-container {
-      }
-      img {
-        height: 150px;
-        width: 150px;
-        border-radius: 10px;
-      }
 
       .project_info {
         display: flex;
@@ -242,10 +235,9 @@ section {
 }
 // filter css
 .filterDiv {
-  float: left;
   background-color: #2196F3;
   color: #ffffff;
-  width: 100px;
+
   line-height: 100px;
   text-align: center;
   margin: 2px;
@@ -258,7 +250,10 @@ section {
 
 .container {
   margin-top: 20px;
-  overflow: hidden;
+display: flex;
+width: 90%;
+justify-content: center;
+
 }
 
 /* Style the buttons */
@@ -277,6 +272,15 @@ section {
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+.image-container {
+  img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
 }
 @media only screen and (min-width: 768px) {
   .hero h1.fullname {
