@@ -131,7 +131,8 @@ section {
   }
 }
 // project Section.
-.project {
+#project {
+  height: initial;
   .section_title {
     @include section_title;
   }
