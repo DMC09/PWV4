@@ -132,7 +132,7 @@ section {
 }
 // project Section.
 #project {
-  height: initial;
+
   .section_title {
     @include section_title;
   }
@@ -287,6 +287,14 @@ justify-content: center;
 
 }
 @media only screen and (min-width: 768px) {
+
+  .container{
+flex-flow: initial;
+
+  }
+  #filterDiv{
+
+  }
   .hero h1.fullname {
     font-size: 6rem;
     font-size: normal;
