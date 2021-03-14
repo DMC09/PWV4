@@ -26,22 +26,14 @@ html {
   background: $base-color;
   font-family: "Rajdhani", sans-serif ;
 }
-body{
-  overflow-x: hidden;
-}
 
-main{
-  z-index: 2;
-  overflow-x: hidden;
-}
+
 
 html {
   scroll-behavior: smooth;
 }
 // Section CSS
 section {
-  margin-bottom: 5rem;
-  position: relative;
 }
 // scroll spy css
 .scrollspy-nav .scrollspy-indicator {
@@ -53,6 +45,7 @@ section {
   left: 0;
   transition: width 0.3s, left 0.1s;
 }
+// hero section
 .hero {
   height: 100vh;
   display: flex;
@@ -72,20 +65,6 @@ section {
     color: $tertiary-color;
     font-size: $role_plate;
     text-align: center;
-  }
-  .link_container {
-    i {
-      color: #a9a9a9;
-      margin: 0;
-      font-size: 3rem;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        transform: scale(1.1);
-        color: lighten(#a9a9a9, 20%);
-      }
-    }
-    margin-bottom: 2rem;
   }
   a.email {
     color: $secondary-color;
@@ -117,6 +96,21 @@ section {
     &:active {
       position: relative;
       top: 4px;
+    }
+  }
+}
+
+.link_container {
+  margin-bottom: 2rem;
+  i {
+    color: #a9a9a9;
+    margin: 0;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      color: lighten(#a9a9a9, 20%);
     }
   }
 }
