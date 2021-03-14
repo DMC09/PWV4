@@ -6,15 +6,15 @@
   position: sticky;
   top: 0;
   left: 0;
-  background: rgb(255, 255, 255);
+  background: #072e40);
 }
 
 .scrollspy-nav .scrollspy-link {
   text-decoration: none;
-  color: #333;
-  font-family: sans-serif;
+  color: #c84417;
+font-family: "Rajdhani", sans-serif ;
   transition: 0.3s ease;
-  font-weight: bold;
+
   margin: 0px 10px;
   padding: 0px 5px;
   cursor: pointer;
@@ -28,7 +28,7 @@
   position: absolute;
   height: 3px;
   width: 0;
-  background: red;
+  background: #fff7d6;
   bottom: 0;
   left: 0;
   transition: width 0.3s, left 0.1s;
@@ -39,8 +39,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: xx-large;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+font-family: "Rajdhani", sans-serif ;
 }
