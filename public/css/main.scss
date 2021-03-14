@@ -132,6 +132,7 @@ section {
 }
 // project Section.
 #project {
+  height: 90vh;
 padding: 4rem 0;
   .section_title {
     @include section_title;
@@ -261,6 +262,11 @@ justify-content: center;
 }
 
 /* Style the buttons */
+#myBtnContainer{
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
 .btn {
   border: none;
   outline: none;
