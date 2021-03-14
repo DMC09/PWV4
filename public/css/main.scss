@@ -237,15 +237,13 @@ section {
 .filterDiv {
   background-color: #2196F3;
   color: #ffffff;
-
-  line-height: 100px;
   text-align: center;
   margin: 2px;
   display: none;
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 .container {
