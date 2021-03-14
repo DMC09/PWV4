@@ -7,8 +7,9 @@
   top: 0;
   left: 0;
   background: #072e40;
-
+border-bottom: 1px solid black;
   z-index: 1;
+  padding-top: 0.5rem;
 }
 
 .scrollspy-nav .scrollspy-link {
@@ -23,7 +24,7 @@ font-family: "Rajdhani", sans-serif ;
 }
 
 .scrollspy-nav .scrollspy-link:hover {
-  color: #000;
+  color: #fff7d6;
 }
 
 .scrollspy-nav .scrollspy-indicator {
@@ -39,6 +40,7 @@ font-family: "Rajdhani", sans-serif ;
 .scrollspy-section {
   height: 100vh;
   display: flex;
+flex-flow:column;
   align-items: center;
   justify-content: center;
 font-family: "Rajdhani", sans-serif ;

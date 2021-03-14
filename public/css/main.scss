@@ -18,41 +18,32 @@ $project_desc: 1rem;
   text-align: center;
   padding-top: 2rem;
 }
-@mixin nav-arrow {
-  color: $tertiary-color;
-  font-size: 1.5rem;
-}
 
-.nav_text {
-  opacity: 0;
-  color: $secondary-color;
-  transition: all 0.3s ease-in-out;
-}
 
-.reveal-text {
-  opacity: 1;
-  color: $secondary-color;
-}
-// general
+// general CSS
 body,
 html {
   background: $base-color;
   font-family: "Rajdhani", sans-serif ;
 }
 body{
+  overflow-x: hidden;
 }
+
 main{
   z-index: 2;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
 }
+// Section CSS
 section {
   margin-bottom: 5rem;
   position: relative;
 }
-
+// scroll spy css
 .scrollspy-nav .scrollspy-indicator {
   position: absolute;
   height: 3px;
@@ -158,50 +149,24 @@ section {
 grid-template-columns: 1fr;
 grid-template-rows: repeat(6,1fr);
 place-items: center;
+height: 80%;
     .card {
       margin-bottom: 1.5rem;
-
       padding: 1rem 0.5rem;
       background: #333;
       border-radius: 10px;
       display: flex;
       width: 90%;
 .image-container{
-  margin: 0 auto;
+
 }
       img {
         height: 150px;
         width: 150px;
         border-radius: 10px;
       }
-      .icon_set {
-        padding-top: 1rem;
-text-align: center;
-        & > * {
-          font-size: 1.25rem;
-          margin: 0 0.5rem;
 
-        }
-        .fa-js-square {
-          color: #f0db4f;
-        }
-        .fa-node-js {
-          color: #68a063;
-        }
-        .fa-css3-alt {
-          color: #2965f1;
-        }
-        .fa-html5 {
-          color: #f06529;
-        }
-        .fa-react {
-          color: #61dafb;
-        }
-      }
       .project_info {
-
-
-
         display: flex;
         flex-flow: column;
         justify-content: space-around;
@@ -261,6 +226,30 @@ text-align: center;
   }
 }
 
+.icon_set {
+  padding-top: 1rem;
+text-align: center;
+  & > * {
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+
+  }
+  .fa-js-square {
+    color: #f0db4f;
+  }
+  .fa-node-js {
+    color: #68a063;
+  }
+  .fa-css3-alt {
+    color: #2965f1;
+  }
+  .fa-html5 {
+    color: #f06529;
+  }
+  .fa-react {
+    color: #61dafb;
+  }
+}
 @media only screen and (min-width: 768px) {
   body,
   html {
