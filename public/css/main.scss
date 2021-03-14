@@ -240,6 +240,9 @@ section {
   text-align: center;
   margin: 2px;
   display: none;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 }
 
 .show {
@@ -251,6 +254,7 @@ section {
 display: flex;
 flex-flow: column;
 width: 90%;
+align-items: center;
 justify-content: center;
 
 }
