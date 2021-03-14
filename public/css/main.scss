@@ -24,10 +24,8 @@ $project_desc: 1rem;
 body,
 html {
   background: $base-color;
-  font-family: "Rajdhani", sans-serif ;
+  font-family: "Rajdhani", sans-serif;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -49,7 +47,6 @@ section {
 .hero {
   height: 100vh;
   display: flex;
-  position: relative;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -99,7 +96,6 @@ section {
     }
   }
 }
-
 .link_container {
   margin-bottom: 2rem;
   i {
@@ -114,6 +110,7 @@ section {
     }
   }
 }
+// about section
 .about {
   height: 100vh;
   display: flex;
@@ -124,7 +121,6 @@ section {
   }
   .bio {
     color: $secondary-color;
-
     text-align: left;
     justify-content: center;
     width: 75%;
@@ -134,26 +130,27 @@ section {
     font-size: $bio;
   }
 }
+// project Section.
 .project {
   .section_title {
     @include section_title;
   }
   .card_container {
+    margin-top: 4rem;
     display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(6,1fr);
-place-items: center;
-height: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    place-items: center;
+    height: 80%;
     .card {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       padding: 1rem 0.5rem;
       background: #333;
       border-radius: 10px;
       display: flex;
       width: 90%;
-.image-container{
-
-}
+      .image-container {
+      }
       img {
         height: 150px;
         width: 150px;
@@ -185,14 +182,14 @@ height: 80%;
           a {
             display: block;
             cursor: pointer;
-text-align: center;
+            text-align: center;
             button {
               box-shadow: -6px 8px 13px -5px #000;
               // background: rgba(0, 0, 0, 0.1);
               background: $base-color;
               border-radius: 10px;
               width: 80px;
-                           height: 35px;
+              height: 35px;
               border: 2px solid $base-color;
 
               display: inline-block;
@@ -222,11 +219,10 @@ text-align: center;
 
 .icon_set {
   padding-top: 1rem;
-text-align: center;
+  text-align: center;
   & > * {
     font-size: 1.25rem;
     margin: 0 0.5rem;
-
   }
   .fa-js-square {
     color: #f0db4f;
@@ -245,9 +241,7 @@ text-align: center;
   }
 }
 @media only screen and (min-width: 768px) {
-  body,
-  html {
-  }
+
 
   .hero h1.fullname {
     font-size: 6rem;
@@ -264,20 +258,19 @@ text-align: center;
     text-align: left;
     font-size: 1.5rem;
   }
-
   .project .card_container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
-    margin-top: 5rem;
+
     .card {
-width: 66%;
-max-width: 400px;
+
+
       img {
         width: 200px;
         height: 200px;
 
-        border-radius:  10px;
+        border-radius: 10px;
         border: 3px solid grey;
       }
     }
