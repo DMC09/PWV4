@@ -237,7 +237,7 @@ padding: 4rem 0;
 }
 // filter css
 .filterDiv {
-  background-color: #2196F3;
+  background-color: #333;
   color: #ffffff;
   text-align: center;
   margin: 2px;
@@ -296,11 +296,14 @@ margin-top: 1.5rem;
 @media only screen and (min-width: 768px) {
 
   .container{
-flex-flow: initial;
+flex-flow: row;
+flex-wrap: wrap;
+height: 66%;
 
   }
-  #filterDiv{
-
+  .filterDiv{
+width: 40%;
+max-width: 350px;
   }
   .hero h1.fullname {
     font-size: 6rem;
