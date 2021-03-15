@@ -137,83 +137,65 @@ padding: 4rem 0;
   .section_title {
     @include section_title;
   }
-  .card_container {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    place-items: center;
-    height: 60%;
-    .card {
-      margin-bottom: 1rem;
-      padding: 1rem 0.5rem;
-      background: #333;
-      border-radius: 10px;
-      display: flex;
-      width: 90%;
+}
+.project_info {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  .project_title {
+    color: $secondary-color;
+    font-size: $project_title;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .project_desc {
+    color: $secondary-color;
+    font-size: $project_desc;
+    text-align: center;
+    padding:  1rem;
+  }
+  .projectBtn_container {
+    display: flex;
+    justify-content: center;
 
-      .project_info {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-around;
-        margin: 0 auto;
-        .project_title {
-          color: $secondary-color;
-          font-size: $project_title;
-          margin-bottom: 1rem;
-          text-decoration: underline;
-          text-align: center;
+    a {
+      display: block;
+      cursor: pointer;
+      text-align: center;
+      button {
+        box-shadow: -6px 8px 13px -5px #000;
+        // background: rgba(0, 0, 0, 0.1);
+        background: $base-color;
+        border-radius: 10px;
+        width: 80px;
+        height: 35px;
+        border: 2px solid $base-color;
+
+        display: inline-block;
+        cursor: pointer;
+        color: $secondary-color;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #000;
+        transition: all 0.3s ease-in-out;
+        margin: 0rem 0.5rem;
+        font-size: 1rem;
+        &:hover {
+          background: $secondary-color;
+          transform: scale(1.05);
+          color: $tertiary-color;
         }
-        .project_desc {
-          color: $secondary-color;
-          font-size: $project_desc;
-          text-align: center;
-          padding: 0rem 1rem;
-        }
-        .projectBtn_container {
-          display: flex;
-          justify-content: center;
-
-          a {
-            display: block;
-            cursor: pointer;
-            text-align: center;
-            button {
-              box-shadow: -6px 8px 13px -5px #000;
-              // background: rgba(0, 0, 0, 0.1);
-              background: $base-color;
-              border-radius: 10px;
-              width: 80px;
-              height: 35px;
-              border: 2px solid $base-color;
-
-              display: inline-block;
-              cursor: pointer;
-              color: $secondary-color;
-              text-decoration: none;
-              text-shadow: 0px 1px 0px #000;
-              transition: all 0.3s ease-in-out;
-              margin: 0rem 0.5rem;
-              font-size: 1rem;
-              &:hover {
-                background: $secondary-color;
-                transform: scale(1.05);
-                color: $tertiary-color;
-              }
-              &:active {
-                position: relative;
-                top: 4px;
-              }
-            }
-          }
+        &:active {
+          position: relative;
+          top: 4px;
         }
       }
     }
   }
 }
-
 .icon_set {
-  padding-top: 1rem;
+  padding: 1rem 0;
   text-align: center;
   & > * {
     font-size: 1.25rem;
@@ -242,7 +224,7 @@ padding: 4rem 0;
   text-align: center;
   margin: 0.5rem;
   display: none;
-  width: 80%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -290,7 +272,9 @@ margin-top: 1.5rem;
   img {
     height: 150px;
     width: 150px;
-    border-radius: 10px;
+    padding: 0.5rem;
+    border-radius: 20px;
+
   }
 
 }
@@ -321,21 +305,5 @@ max-width: 450px;
     text-align: left;
     font-size: 1.5rem;
   }
-  .project .card_container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
 
-    .card {
-
-
-      img {
-        width: 200px;
-        height: 200px;
-
-        border-radius: 10px;
-        border: 3px solid grey;
-      }
-    }
-  }
 }
