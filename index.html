@@ -3,29 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal Website for Dharmin Chauhan" />
-    <meta name="keywords" content="HTML,CSS,JavaScript, Jquery,fullpage.js" />
+    <meta
+      name="description"
+      content="Personal Portfolio Website for Dharmin Chauhan"
+    />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
     <meta name="author" content="Dharmin Chauhan" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="title" property="og:title" content="Dharmin Chauhan" />
+    <meta property="og:type" content="Website" />
+    <meta name="image" property="og:image" content="_" />
+    <meta
+      name="description"
+      property="og:description"
+      content="Personal Portfolio Website for Dharmin Chauhan"
+    />
+    <meta name="author" content="Dharmin Chauhan" />
     <script defer src="./public/js/scrollspy.min.js"></script>
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./public/css/main.min.css" />
     <link rel="stylesheet" href="./public/css/scrollspy.css" />
     <title>Dharmin Chauhan</title>
   </head>
   <body>
     <nav class="scrollspy-nav">
-<a class="scrollspy-link" href="#main" data-target="main">Home</a>
-<a class="scrollspy-link" href="#about" data-target="about">About</a>
-<a class="scrollspy-link" href="#project" data-target="project">Projects</a>
-<span class="scrollspy-indicator"></span>
-</nav>
+      <a class="scrollspy-link" href="#main" data-target="main">Home</a>
+      <a class="scrollspy-link" href="#about" data-target="about">About</a>
+      <a class="scrollspy-link" href="#project" data-target="project"
+        >Projects</a
+      >
+      <span class="scrollspy-indicator"></span>
+    </nav>
     <main>
       <section id="main" class="hero scrollspy-section">
         <h1 class="fullname">Dharmin Chauhan</h1>
@@ -55,7 +72,7 @@
         </a>
         <div class="sectionBtn_container">
           <a href="#about">
-            <button >
+            <button>
               About Me
             </button>
           </a>
@@ -79,18 +96,28 @@
       <section id="project" class="project scrollspy-section">
         <p class="section_title">My Projects</p>
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('React')"> React</button>
-          <button class="btn" onclick="filterSelection('Full-Stack')">Full-Stack</button>
-          <button class="btn" onclick="filterSelection('JavaScript')"> JavaScript</button>
-          <button class="btn" onclick="filterSelection('Landing-Pages')"> Landing Pages</button>
-
+          <button class="btn active" onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="btn" onclick="filterSelection('React')">React</button>
+          <button class="btn" onclick="filterSelection('Full-Stack')">
+            Full-Stack
+          </button>
+          <button class="btn" onclick="filterSelection('JavaScript')">
+            JavaScript
+          </button>
+          <button class="btn" onclick="filterSelection('Landing-Pages')">
+            Landing Pages
+          </button>
         </div>
 
         <div class="container">
           <div class="filterDiv Full-Stack React">
             <div class="image-container">
-              <img src="https://raw.githubusercontent.com/DMC09/Image-storage/main/LeagueLeaders.png" alt="League Leaders App" />
+              <img
+                src="https://raw.githubusercontent.com/DMC09/Image-storage/main/LeagueLeaders.png"
+                alt="League Leaders App"
+              />
               <div class="icon_set">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -101,7 +128,8 @@
             <div class="project_info">
               <p class="project_title">Leage Leaders App</p>
               <p class="project_desc">
-                A full-stack React app to to show player who are leading the league in respective stats.
+                A full-stack React app to to show player who are leading the
+                league in respective stats.
               </p>
               <div class="projectBtn_container">
                 <a
@@ -128,7 +156,10 @@
           </div>
           <div class="filterDiv Full-Stack React">
             <div class="image-container">
-              <img src="https://raw.githubusercontent.com/DMC09/Image-storage/main/sanaBetaSnap.png" alt="Sana Beta App" />
+              <img
+                src="https://raw.githubusercontent.com/DMC09/Image-storage/main/sanaBetaSnap.png"
+                alt="Sana Beta App"
+              />
               <div class="icon_set">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -166,7 +197,10 @@
           </div>
           <div class="filterDiv JavaScript">
             <div class="image-container">
-              <img src="https://raw.githubusercontent.com/DMC09/Image-storage/main/covidTrackerSnap.png" alt="COVID-19 Tracker" />
+              <img
+                src="https://raw.githubusercontent.com/DMC09/Image-storage/main/covidTrackerSnap.png"
+                alt="COVID-19 Tracker"
+              />
               <div class="icon_set">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -204,7 +238,10 @@
           </div>
           <div class="filterDiv Full-Stack JavaScript">
             <div class="image-container">
-              <img src="https://raw.githubusercontent.com/DMC09/Image-storage/main/weatherAppSnap.png" alt="Weather App" />
+              <img
+                src="https://raw.githubusercontent.com/DMC09/Image-storage/main/weatherAppSnap.png"
+                alt="Weather App"
+              />
               <div class="icon_set">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -241,7 +278,10 @@
           </div>
           <div class="filterDiv Landing-Pages">
             <div class="image-container">
-              <img src="https://raw.githubusercontent.com/DMC09/Image-storage/main/Adopta-pet.png" alt="Adopt a pet" />
+              <img
+                src="https://raw.githubusercontent.com/DMC09/Image-storage/main/Adopta-pet.png"
+                alt="Adopt a pet"
+              />
               <div class="icon_set">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -277,7 +317,10 @@
           </div>
           <div class="filterDiv Landing-Pages">
             <div class="image-container">
-              <img src="https://raw.githubusercontent.com/DMC09/Image-storage/main/redLeafBistroSnap.png" alt="Red Leaf Bistro" />
+              <img
+                src="https://raw.githubusercontent.com/DMC09/Image-storage/main/redLeafBistroSnap.png"
+                alt="Red Leaf Bistro"
+              />
               <div class="icon_set">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -314,7 +357,10 @@
           </div>
           <div class="filterDiv Landing-Pages">
             <div class="image-container">
-              <img src="https://raw.githubusercontent.com/DMC09/Image-storage/main/ravaCardSnap.png" alt="Raval Card" />
+              <img
+                src="https://raw.githubusercontent.com/DMC09/Image-storage/main/ravaCardSnap.png"
+                alt="Raval Card"
+              />
               <div class="icon_set">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -352,48 +398,50 @@
       </section>
     </main>
     <script>
-    filterSelection("all")
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
-    }
-
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-      }
-    }
-
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
         }
       }
-      element.className = arr1.join(" ");
-    }
 
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
     </script>
   </body>
 </html>
