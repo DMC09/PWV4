@@ -147,14 +147,16 @@ padding: 4rem 0;
     color: $secondary-color;
     font-size: $project_title;
     margin-bottom: 1rem;
-    text-decoration: underline;
     text-align: center;
+    font-weight: bold;
   }
+
   .project_desc {
     color: $secondary-color;
     font-size: $project_desc;
     text-align: center;
     padding:  1rem;
+
   }
   .projectBtn_container {
     display: flex;
@@ -172,7 +174,6 @@ padding: 4rem 0;
         width: 80px;
         height: 35px;
         border: 2px solid $base-color;
-
         display: inline-block;
         cursor: pointer;
         color: $secondary-color;
@@ -242,6 +243,7 @@ flex-flow: column;
 width: 95%;
 align-items: center;
 justify-content: center;
+padding-bottom: 1.5rem;
 
 }
 
